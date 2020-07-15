@@ -1,0 +1,56 @@
+baseURL = "http://tomburton.dev"
+languageCode = "en-us"
+title = "Tom Burton"
+theme = "pulp"
+canonifyurls = true
+enableEmoji = true
+
+# googleAnalytics = "{your tracking code}"
+
+
+[taxonomies]
+  series = "series"
+
+[params]
+    author = "Tom Burton"
+    avatar = "me.jpg"
+    publicationYear = 2020
+    description = "Full stack software developer currently working with Go and Vue"
+    custom_css = "css/custom.css"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+[outputs]
+    section = ["JSON", "HTML"]
+
+[[menu.main]]
+  identifier = "cv"
+  pre = "<i class='fa fa-file-alt fa-lg nav-cv'></i>"
+  url = "/docs/tom-burton-resume.pdf"
+  weight = 1
+
+[[menu.main]]
+  identifier = "github"
+  pre = "<i class='fab fa-github fa-lg nav-github'></i>"
+  url = "https://github.com/t0mburton"
+  weight = 3
+
+[[menu.main]]
+  identifier = "linkedin"
+  pre = "<i class='fab fa-linkedin fa-lg nav-linkedin'></i>"
+  url = "https://www.linkedin.com/in/t0mburton"
+  weight = 4
+
+[[menu.main]]
+  identifier = "strava"
+  pre = "<i class='fab fa-strava fa-lg nav-strava'></i>"
+  url = "https://www.strava.com/athletes/t0mburton"
+  weight = 5
+
+[[menu.main]]
+  identifier = "email"
+  pre = "<i class='fa fa-envelope fa-lg nav-email'></i>"
+  url = "mailto:tom@tomburton.dev"
+  weight = 6

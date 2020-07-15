@@ -1,0 +1,11 @@
+
+<footer>
+    <p>
+    Powered by <i class='fa fa-mug-hot fa-lg'></i>
+    <br>
+    &copy; {{ .Site.Params.publicationYear }} {{ .Site.Params.Author }}
+    </p>
+  </footer>
+{{- range .Site.Params.custom_js -}}
+<script src="{{ . }}"></script>
+{{ end }}
