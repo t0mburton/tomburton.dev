@@ -1,26 +1,21 @@
-baseURL = "http://tomburton.dev"
-languageCode = "en-us"
+baseURL = "https://tomburton.dev"
+languageCode = "en-uk"
 title = "Tom Burton"
 theme = "pulp"
+disableKinds = ["RSS"]
+googleAnalytics = "UA-172742667-1"
 canonifyurls = true
 enableEmoji = true
-
-# googleAnalytics = "{your tracking code}"
-
 
 [taxonomies]
   series = "series"
 
 [params]
-    author = "Tom Burton"
-    avatar = "me.jpg"
-    publicationYear = 2020
-    description = "Full stack software developer currently working with Go and Vue"
-    custom_css = "css/custom.css"
-    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
-    # singlePageDateFormat = "January 2, 2006"
-    # custom_css = ["/css/custom.css"]
-    # custom_js = ["/js/custom.js"]
+  author = "Tom Burton"
+  avatar = "me.jpg"
+  publicationYear = 2020
+  description = "Full stack software developer currently working with Go and Vue"
+  custom_css = "css/custom.css"
 
 [outputs]
     section = ["JSON", "HTML"]
