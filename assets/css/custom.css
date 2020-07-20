@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+nav li {
+    margin: 0 15px;
+}
+
 .nav-linkedin:hover {
     color: #0073B0;
 }
