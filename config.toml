@@ -13,7 +13,7 @@ enableEmoji = true
 [params]
   author = "Tom Burton"
   avatar = "me.jpg"
-  publicationYear = 2023
+  publicationYear = 2024
   description = "Full stack software developer currently working with Go and Vue"
   custom_css = "css/custom.css"
 
