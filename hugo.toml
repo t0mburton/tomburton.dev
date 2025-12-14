@@ -1,0 +1,136 @@
+baseURL = "https://tomburton.dev"
+theme = "LoveIt"
+title = "tomburton.dev"
+defaultContentLanguage = "en"
+languageCode = "en"
+languageName = "English"
+hasCJKLanguage = false
+enableRobotsTXT = true
+enableEmoji = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "resume"
+    name = "Resume"
+    url = "/docs/tom-burton-resume.pdf"
+    title = "Resume"
+  [[menu.main]]
+    weight = 2
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    title = "Posts"
+
+[params]
+  defaultTheme = "dark"
+  fingerprint = "sha256"
+  dateFormat = "02-01-06"
+  title = "tomburton.dev"
+  description = "Tom Burton - Personal Site"
+
+  [params.author]
+    name = "Tom Burton"
+    email = "tom@tomburton.dev"
+    link = "https://tomburton.dev"
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      name = "tomburton.dev"
+      pre = "<i class='fa-solid fa-terminal' aria-hidden='true'></i>"
+      typeit = true
+
+  [params.footer]
+    enable = false
+
+  [params.section]
+    paginate = 20
+    dateFormat = "02-01-06"
+    rss = 10
+
+  [params.list]
+    paginate = 20
+    dateFormat = "02-01-06"
+    rss = 10
+
+  [params.search]
+    enable = true
+    type = "lunr"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      avatarURL = "/images/me.png"
+      title = "Tom Burton"
+      subtitle = "Designing and building backend systems in Go."
+      typeit = false
+    [params.home.posts]
+      enable = false
+  [params.social]
+    GitHub = "t0mburton"
+    Linkedin = "t0mburton"
+    Strava = "t0mburton"
+    Email = "tom@tomburton.dev"
+
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    lightgallery = true
+    linkToMarkdown = false
+    [params.page.toc]
+      enable = true
+      keepStatic = false
+      auto = true
+    [params.page.code]
+      copy = true
+      maxShownLines = 100
+      [params.page.code.render]
+        goat = true
+        mermaid = true
+    [params.page.share]
+      enable = true
+      X = true
+      Facebook = true
+      Linkedin = true
+      HackerNews = true
+      Reddit = true
+      Line = false
+      Weibo = false
+
+    [params.page.comment]
+      enable = false
+
+  [params.typeit]
+    speed = 150
+    cursorSpeed = 1000
+    cursorChar = "|"
+    duration = -1
+
+  [params.seo]
+    image = "/images/Apple-Devices-Preview.png"
+    thumbnailUrl = "/images/screenshot.png"
+
+  [params.analytics]
+    enable = true
+    [params.analytics.google]
+      id = "G-VNSVWWXKM8"
+      respectDoNotTrack = false
